@@ -14,7 +14,7 @@ const AgentPage = () => {
   return (
     <div className="w-full">
       <section className="absolute z-0 agency-top">
-        <img src="/images/agency-top.png" className="w-full" alt="agency-top" />
+        <img src="/images/agency-top.svg" className="w-full" alt="agency-top" />
       </section>
       <E2CAlert
         color="alert-text"
@@ -70,7 +70,7 @@ const AgentPage = () => {
 
       <section className="relative w-full overflow-x-hidden">
         <img
-          src="/images/message_circle_bg.png"
+          src="/images/message_circle_bg.svg"
           alt="circle"
           className="absolute z-0 agent-circle"
         />
@@ -94,7 +94,7 @@ const AgentPage = () => {
             animateOnce={true}
           >
             <FeatureCard
-              image="/images/icon-people.png"
+              image="/images/icon-people.svg"
               title="Per Student Per Month"
               subtitle="At the end of each calendar month, we generate an invoice based on the number of active students using your schools platform throughout the previous month. That way, you are only paying for the students who are actively using and engaged with your platform - a win, win!"
             />
@@ -107,10 +107,10 @@ const AgentPage = () => {
       >
         <img
           src="/images/message_bg.png"
-          className="pricing-message-bg absolute z-0"
+          className="pricing-message-bg absolute z-0 w-full"
           alt="message_bg"
         />
-        <div className="container">
+        <div className="container mx-auto">
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
             <img
               className="hidden md:block"

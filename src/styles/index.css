@@ -27,11 +27,11 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Poppins";
+  font-family: "OpenSans";
 }
 
 .ellipse_bg {
-  background: transparent url(/images/ellipse_bg.png) no-repeat 25% 50% / cover;
+  background: transparent url(/images/ellipse_bg.svg) no-repeat 25% 50% / cover;
 }
 
 @tailwind base;
@@ -68,6 +68,12 @@ p {
   position: absolute;
   bottom: -11vw;
   left: calc(33% - 12rem);
+}
+
+@media (min-width: 1600px) {
+  .home-richmedia {
+    bottom: -160px;
+  }
 }
 
 .home-become-leader {
@@ -166,8 +172,17 @@ p {
 }
 
 .home-message-bg {
-  margin-top: -20vw;
+  margin-top: -150px;
   width: 100%;
+  height: 600px;
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .home-message-bg {
+    margin-top: -90px;
+    width: 100%;
+    height: 500px;
+  }
 }
 
 .pricing-message-bg {

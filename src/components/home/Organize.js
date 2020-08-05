@@ -9,8 +9,8 @@ export default () => {
       className="home-organize"
     >
       <div className="w-5/6 mx-auto flex flex-row justify-between">
-        <img src="/images/students_left.png" alt="students_left" />
-        <img src="/images/students_right.png" alt="students_right" />
+        <img src="/images/students_left.svg" alt="students_left" />
+        <img src="/images/students_right.svg" alt="students_right" />
       </div>
     </E2CWindow>
   );

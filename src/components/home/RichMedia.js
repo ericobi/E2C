@@ -9,9 +9,9 @@ export default () => {
       className="home-richmedia"
     >
       <div className="w-5/6 mx-auto flex flex-row justify-between">
-        <img src="/images/media1.png" alt="media1" />
-        <img src="/images/media2.png" alt="media2" />
-        <img src="/images/media3.png" alt="media3" />
+        <img src="/images/media1.svg" alt="media1" />
+        <img src="/images/media2.svg" alt="media2" />
+        <img src="/images/media3.svg" alt="media3" />
       </div>
     </E2CWindow>
   );

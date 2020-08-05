@@ -17,7 +17,7 @@ const AgentPage = () => {
   return (
     <div className="w-full">
       <section className="absolute z-0 agency-top">
-        <img src="/images/agency-top.png" className="w-full" alt="agency-top" />
+        <img src="/images/agency-top.svg" className="w-full" alt="agency-top" />
       </section>
       <E2CAlert
         color="alert-text"
@@ -64,7 +64,7 @@ const AgentPage = () => {
       </section>
       <section className="relative w-full overflow-x-hidden">
         <img
-          src="/images/message_circle_bg.png"
+          src="/images/message_circle_bg.svg"
           alt="circle"
           className="absolute z-0 agent-circle"
         />
@@ -117,7 +117,7 @@ const AgentPage = () => {
       <section className="relative">
         <img
           src="/images/message_bg.png"
-          className="agent-message-bg absolute z-0"
+          className="agent-message-bg absolute z-0 w-12/12"
           alt="message_bg"
         />
       </section>
@@ -167,7 +167,7 @@ const AgentPage = () => {
             animateOnce={true}
           >
             <FeatureCard
-              image="/images/emojione_desktop-computer.png"
+              image="/images/emojione_desktop-computer.svg"
               title="Fully online self-study"
               subtitle="Expert structured English courses, tailored to your students level of knowledge"
             />
@@ -178,7 +178,7 @@ const AgentPage = () => {
             animateOnce={true}
           >
             <FeatureCard
-              image="/images/flat-color-icons_library.png"
+              image="/images/flat-color-icons_library.svg"
               title="A huge library of content"
               subtitle="Heaps of practice questions, interactive lessons, and methods"
             />
@@ -189,7 +189,7 @@ const AgentPage = () => {
             animateOnce={true}
           >
             <FeatureCard
-              image="/images/emojione_laptop-computer.png"
+              image="/images/emojione_laptop-computer.svg"
               title="Live Classes"
               subtitle="Online or classroom based classes scheduled inside the platform"
             />
@@ -200,7 +200,7 @@ const AgentPage = () => {
             animateOnce={true}
           >
             <FeatureCard
-              image="/images/flat-color-icons_online-support.png"
+              image="/images/flat-color-icons_online-support.svg"
               title="Amazing support"
               subtitle="Access to General english support from beginner to advanced"
             />
@@ -211,7 +211,7 @@ const AgentPage = () => {
             animateOnce={true}
           >
             <FeatureCard
-              image="/images/eva_more-horizontal-outline.png"
+              image="/images/eva_more-horizontal-outline.svg"
               title="Much more!"
               subtitle="Including Pronunciation, Grammar and Vocabulary courses"
             />
@@ -279,7 +279,7 @@ const AgentPage = () => {
       </section>
       <section className="relative">
         <img
-          src="/images/message_circle_bg.png"
+          src="/images/message_circle_bg.svg"
           alt="circle"
           className="absolute z-0 support-circle hidden lg:block"
         />

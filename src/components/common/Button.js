@@ -17,8 +17,12 @@ export default ({
         "rounded-md px-4 py-2 mx-1",
         showBorder ? "border" : "",
         "bg-" + bgColor,
+        "hover:bg-" + bgColor + "-hover",
+        "hover:border-" + bgColor + "-hover",
         "text-" + color,
-        "border-" + color
+        "hover:text-" + color + "-hover",
+        "border-" + color,
+        "hover:border-" + color + "-hover"
       )}
     >
       {children}

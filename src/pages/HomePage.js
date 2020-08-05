@@ -30,7 +30,7 @@ const HomePage = () => {
           Learn More
         </NavLink>
       </E2CAlert>
-      <section className="text-center mt-8">
+      <section className="text-center mt-8 container mx-auto">
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold">
             Transition your school online
@@ -38,7 +38,7 @@ const HomePage = () => {
         </ScrollAnimation>
 
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-          <p className="text-base lg:text-xl xl:text-2xl mt-2 lg:w-2/3 w-full mx-auto">
+          <p className="text-base lg:text-xl xl:text-2xl mt-2 lg:w-2/3 w-full mx-auto p-4 lg:p-0">
             Increase the potential of your school with a fully integrated and
             managed online learning platform through E2Classroom - hassle-free.
           </p>
@@ -72,10 +72,10 @@ const HomePage = () => {
         <section>
           <div className="container mx-auto py-4 hidden md:flex flex-col md:flex-row justify-between items-center">
             <h4 className="text-4xl">Trusted by</h4>
-            <img src="/images/trust1.png" alt="trust1" />
-            <img src="/images/trust2.png" alt="trust2" />
-            <img src="/images/trust3.png" alt="trust3" />
-            <img src="/images/trust4.png" alt="trust4" />
+            <img src="/images/trust1.svg" alt="trust1" />
+            <img src="/images/trust2.svg" alt="trust2" />
+            <img src="/images/trust3.svg" alt="trust3" />
+            <img src="/images/trust4.svg" alt="trust4" />
           </div>
           <div className="ellipse_bg"></div>
         </section>
@@ -117,7 +117,7 @@ const HomePage = () => {
       <section className="relative">
         <img
           src="/images/message_bg.png"
-          className="home-message-bg absolute z-0"
+          className="home-message-bg absolute z-0 w-full"
           alt="message_bg"
         />
       </section>
@@ -153,7 +153,7 @@ const HomePage = () => {
       </section>
       <section className="relative">
         <img
-          src="/images/message_circle_bg.png"
+          src="/images/message_circle_bg.svg"
           alt="circle"
           className="absolute z-0 support-circle hidden lg:block"
         />
@@ -202,12 +202,12 @@ const HomePage = () => {
       </section>
       <section className="relative">
         <img
-          src="/images/message_circle_bg.png"
+          src="/images/message_circle_bg.svg"
           alt="circle"
           className="absolute z-0 trust-circle block md:hidden"
         />
       </section>
-      <section className="z-10 relative my-16 lg:my-8 text-center container mx-auto px-4 pt-8 pb-4 lg:px-8 lg:pt-12 lg:pb-8 xl:px-16 xl:pt-12 md:rounded-lg bg-brand-01">
+      <section className="z-10 relative my-16 lg:my-8 text-center container mx-auto px-4 pt-8 pb-4 lg:px-8 lg:pt-12 lg:pb-8 xl:px-16 xl:pt-12 sm:rounded-md bg-brand-01">
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <h2 className="text-3xl lg:text-4xl font-bold text-white">
             Support when you need it.
@@ -232,7 +232,7 @@ const HomePage = () => {
       </section>
       <section className="relative">
         <img
-          src="/images/message_circle_bg.png"
+          src="/images/message_circle_bg.svg"
           alt="circle"
           className="absolute z-0 support-circle hidden lg:block"
         />
