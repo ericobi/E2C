@@ -5,7 +5,7 @@ export default ({ color, bgColor, showBorder, left, right, children }) => {
   return (
     <div
       className={cx(
-        "container mx-auto w-full rounded-md px-2 py-3 my-2 flex flex-row justify-between items-center",
+        "container mx-auto hidden md:w-full rounded-md px-2 py-3 my-2 flex flex-row justify-between items-center",
         showBorder ? "border" : "",
         "bg-" + bgColor,
         "text-" + color

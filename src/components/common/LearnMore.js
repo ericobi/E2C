@@ -11,7 +11,10 @@ export default ({ onClick, text }) => {
       />
       <div className="flex flex-col mx-2">
         <p className="text-text-01 text-base">Learn More</p>
-        <button className="underline text-brand-02 text-base" onClick={onClick}>
+        <button
+          className="text-left underline text-brand-02 text-base"
+          onClick={onClick}
+        >
           {text}
         </button>
       </div>
