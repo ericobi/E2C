@@ -19,8 +19,8 @@ export default () => {
   }, [size.width]);
 
   return (
-    <header className={`py-2 relative z-20 ${mobileShow ? "bg-white" : ""}`}>
-      <div className="container m-auto flex justify-between flex-row">
+    <header className={`relative z-20 ${mobileShow ? "bg-white" : ""}`}>
+      <div className="py-4 container m-auto flex justify-between flex-row">
         <div className="logo">
           <NavLink to="/">
             <img src="/images/logo-1.svg" alt="E2C Logo" />
@@ -42,7 +42,7 @@ export default () => {
               <li>
                 <NavLink
                   to="/courses"
-                  className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+                  className="font-body2 text-text-01 md:px-2 lg:px-4 xl:px-6"
                 >
                   Courses
                 </NavLink>
@@ -50,7 +50,7 @@ export default () => {
               <li>
                 <NavLink
                   to="/solutions"
-                  className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+                  className="font-body2 text-text-01 md:px-2 lg:px-4 xl:px-6"
                 >
                   Solutions
                 </NavLink>
@@ -58,7 +58,7 @@ export default () => {
               <li>
                 <NavLink
                   to="/pricing"
-                  className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+                  className="font-body2 text-text-01 md:px-2 lg:px-4 xl:px-6"
                 >
                   Pricing
                 </NavLink>
@@ -66,7 +66,7 @@ export default () => {
               <li>
                 <NavLink
                   to="/agent"
-                  className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+                  className="font-body2 text-text-01 md:px-2 lg:px-4 xl:px-6"
                 >
                   Become an agent
                 </NavLink>
@@ -95,7 +95,7 @@ export default () => {
         >
           <li className="h-16 py-5 px-8">
             <div
-              className="text-text-01 md:px-2 lg:px-4 xl:px-6 flex justify-between"
+              className="font-body2-semi-bold text-text-01 md:px-2 lg:px-4 xl:px-6 flex justify-between"
               onClick={() => setCoursesShow(!coursesShow)}
             >
               Courses
@@ -112,7 +112,7 @@ export default () => {
             <li className="h-16 py-5 px-8">
               <NavLink
                 to="/courses"
-                className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+                className="text-text-01 font-body2-semi-bold md:px-2 lg:px-4 xl:px-6"
               >
                 General English
               </NavLink>
@@ -120,7 +120,7 @@ export default () => {
             <li className="h-16 py-5 px-8">
               <NavLink
                 to="/courses"
-                className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+                className="text-text-01 font-body2-semi-bold md:px-2 lg:px-4 xl:px-6"
               >
                 IELTS Academic
               </NavLink>
@@ -128,7 +128,7 @@ export default () => {
             <li className="h-16 py-5 px-8">
               <NavLink
                 to="/courses"
-                className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+                className="text-text-01 font-body2-semi-bold md:px-2 lg:px-4 xl:px-6"
               >
                 IELTS General
               </NavLink>
@@ -136,7 +136,7 @@ export default () => {
             <li className="h-16 py-5 px-8">
               <NavLink
                 to="/courses"
-                className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+                className="text-text-01 font-body2-semi-bold md:px-2 lg:px-4 xl:px-6"
               >
                 PTE
               </NavLink>
@@ -144,7 +144,7 @@ export default () => {
             <li className="h-16 py-5 px-8">
               <NavLink
                 to="/courses"
-                className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+                className="text-text-01 font-body2-semi-bold md:px-2 lg:px-4 xl:px-6"
               >
                 OET
               </NavLink>
@@ -152,7 +152,7 @@ export default () => {
             <li className="h-16 py-5 px-8">
               <NavLink
                 to="/solutions"
-                className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+                className="text-text-01 font-body2-semi-bold md:px-2 lg:px-4 xl:px-6"
               >
                 TOEFL
               </NavLink>
@@ -161,7 +161,7 @@ export default () => {
           <li className="h-16 py-5 px-8">
             <NavLink
               to="/solutions"
-              className="text-text-01 md:px-2 lg:px-4 xl:px-6 flex justify-between"
+              className="text-text-01 font-body2-semi-bold md:px-2 lg:px-4 xl:px-6 flex justify-between"
             >
               Solutions
               <img
@@ -174,7 +174,7 @@ export default () => {
           <li className="h-16 py-5 px-8">
             <NavLink
               to="/pricing"
-              className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+              className="text-text-01 font-body2-semi-bold md:px-2 lg:px-4 xl:px-6"
             >
               Pricing
             </NavLink>
@@ -182,15 +182,15 @@ export default () => {
           <li className="h-16 py-5 px-8">
             <NavLink
               to="/agent"
-              className="text-text-01 md:px-2 lg:px-4 xl:px-6"
+              className="text-text-01 font-body2-semi-bold md:px-2 lg:px-4 xl:px-6"
             >
               Become an agent
             </NavLink>
           </li>
-          <li className="h-16 py-5 px-8 text-brand-04">
+          <li className="h-16 py-5 px-8 font-body2-semi-bold text-brand-04">
             <NavLink to="/login">Login</NavLink>
           </li>
-          <li className="h-16 py-5 px-8 bg-brand-04 text-white">
+          <li className="h-16 py-5 px-8 font-body2-semi-bold bg-brand-04 text-white">
             <NavLink to="/signup">Sign Up</NavLink>
           </li>
         </ul>

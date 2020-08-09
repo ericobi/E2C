@@ -11,8 +11,8 @@ export default ({ image, title, subtitle }) => {
         </div>
       </div>
       <div className="flex flex-col ">
-        <h4 className="text-xl leading-10">{title}</h4>
-        <p className="text-sm leading-8">{subtitle}</p>
+        <h3 className="font-h3">{title}</h3>
+        <p className="font-body1">{subtitle}</p>
       </div>
     </div>
   );

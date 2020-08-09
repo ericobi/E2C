@@ -8,7 +8,7 @@ export default () => {
       description="Create and manage all your classes across multiple courses"
       className="home-schedule"
     >
-      <div className="w-84 relative mx-auto">
+      <div className="w-64 relative mx-auto">
         <img
           src="/images/schedule_left.svg"
           alt="schedule_left"

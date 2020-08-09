@@ -17,13 +17,16 @@ const AgentPage = () => {
         <img src="/images/agency-top.svg" className="w-full" alt="agency-top" />
       </section>
       <E2CAlert
-        color="alert-text"
+        color="text-alert"
         bgColor="alert-background"
         left={<i className="fa fa-info-circle" aria-hidden="true"></i>}
         right={<i className="fa fa-times" aria-hidden="true"></i>}
       >
-        <span>{announcementString}</span>
-        <NavLink className="underline mx-4" to="/annoucements">
+        <span className="font-body1">{announcementString}</span>
+        <NavLink
+          className="underline mx-4 font-body1-text-link"
+          to="/annoucements"
+        >
           Learn More
         </NavLink>
       </E2CAlert>
@@ -36,15 +39,13 @@ const AgentPage = () => {
               animateOnce={true}
               initiallyVisible={true}
             >
-              <h3 className="text-3xl lg:text-4xl font-bold mb-4 leading-10">
-                Pricing
-              </h3>
+              <h1 className="font-h1">Pricing</h1>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-              <p className="text-base lg:text-xl xl:text-2xl leading-8 mb-4">
+              <h4 className="font-subheading">
                 Contact us now to learn about our simple and transparent
                 packages.
-              </p>
+              </h4>
             </ScrollAnimation>
             <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
               <E2CButton color="white" bgColor="primary">
@@ -122,8 +123,8 @@ const AgentPage = () => {
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
             <div className="hidden md:flex flex-row mt-4">
               <div className="w-1/3">
-                <h5 className="text-text-01 text-xl">COURSES</h5>
-                <div className="flex flex-row text-text-02">
+                <h5 className="text-text-01 font-body2">COURSES</h5>
+                <div className="flex flex-row text-text-02 font-button-text">
                   <ul className="w-1/2 flex flex-col">
                     <li>General English</li>
                     <li>IELTS Academic</li>
@@ -137,10 +138,10 @@ const AgentPage = () => {
                 </div>
               </div>
               <div className="w-1/3">
-                <h5 className="text-text-01 text-xl">SOLUTIONS</h5>
+                <h5 className="text-text-01 font-body2">SOLUTIONS</h5>
               </div>
               <div className="w-1/3">
-                <h5 className="text-text-01 text-xl">SOLUTIONS</h5>
+                <h5 className="text-text-01 font-body2">SOLUTIONS</h5>
               </div>
             </div>
           </ScrollAnimation>

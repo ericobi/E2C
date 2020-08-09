@@ -19,7 +19,7 @@ export default () => {
       description="Convert your offline coursework, or use our extensive library of lessons."
       className="home-coursework"
     >
-      <div className="w-2/3 mx-auto flex flex-row flex-wrap justify-center">
+      <div className="flex flex-row flex-wrap justify-center">
         <Tag bgColor="rgba(217, 47, 79, 0.6)">IELTS-A</Tag>
         <Tag bgColor="rgba(217, 47, 79, 0.6)">IELTS-G</Tag>
         <Tag bgColor="rgba(105, 148, 133, 0.8)">PTE-A</Tag>

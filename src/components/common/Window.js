@@ -10,15 +10,15 @@ export default ({ title, description, className, children }) => {
     return (
       <div
         className={
-          "px-4 w-full mt-8 md:max-w-sm lg:max-w-sm xl:max-w-sm " + className
+          "px-4 w-full mt-8 md:max-w-xs lg:max-w-xs xl:max-w-xs " + className
         }
       >
         <div
           className="rounded-lg p-6 text-center bg-white"
           style={{ boxShadow: "0px 10px 24px rgba(0, 0, 0, 0.1)" }}
         >
-          <h3 className="text-xl font-bold pb-2">{title}</h3>
-          <p className="text-base pb-2">{description}</p>
+          <h6 className="font-h6">{title}</h6>
+          <p className="font-caption mb-2">{description}</p>
           {children}
         </div>
       </div>

@@ -10,9 +10,9 @@ export default ({ onClick, text }) => {
         icon={<i className="fa fa-search" aria-hidden="true"></i>}
       />
       <div className="flex flex-col mx-2">
-        <p className="text-text-01 text-base">Learn More</p>
+        <p className="text-text-01 font-body2-semi-bold">Learn More</p>
         <button
-          className="text-left underline text-brand-02 text-base"
+          className="text-left underline text-brand-02 font-link"
           onClick={onClick}
         >
           {text}

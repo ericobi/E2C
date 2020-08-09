@@ -1,6 +1,8 @@
+@tailwind base;
+
 @font-face {
-  font-family: "OpenSans";
-  src: local("OpenSans"),
+  font-family: "Open Sans";
+  src: local("Open Sans"),
     url(/fonts/Open_Sans/OpenSans-Regular.ttf) format("truetype");
 }
 
@@ -10,34 +12,153 @@
     url(/fonts/Poppins/Poppins-Regular.ttf) format("truetype");
 }
 
+@tailwind components;
+
 body {
-  font-family: "Poppins", "OpenSans", sans-serif;
+  font-family: "Poppins", "Open Sans", sans-serif;
   font-style: normal;
 }
 
-a,
-button {
-  font-family: "OpenSans";
+.font-h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 64px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  font-family: "OpenSans";
+.font-h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.font-h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.font-h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.font-h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.font-h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.font-body1 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.font-body1-text-link {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration-line: underline;
+}
+
+.font-body2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.font-body2-semi-bold {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.font-subheading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.font-subheading-textlink {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 40px;
+  text-decoration-line: underline;
+}
+
+.font-caption {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.font-quote {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.font-button-text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.font-label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.font-link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 32px;
 }
 
 .ellipse_bg {
   background: transparent url(/images/ellipse_bg.svg) no-repeat 25% 50% / cover;
 }
-
-@tailwind base;
-@tailwind components;
-
-@tailwind utilities;
 
 .logo {
   width: 140px;
@@ -269,3 +390,5 @@ p {
     width: 250px;
   }
 }
+
+@tailwind utilities;

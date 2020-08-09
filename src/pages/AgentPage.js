@@ -20,27 +20,28 @@ const AgentPage = () => {
         <img src="/images/agency-top.svg" className="w-full" alt="agency-top" />
       </section>
       <E2CAlert
-        color="alert-text"
+        color="text-alert"
         bgColor="alert-background"
         left={<i className="fa fa-info-circle" aria-hidden="true"></i>}
         right={<i className="fa fa-times" aria-hidden="true"></i>}
       >
-        <span>{announcementString}</span>
-        <NavLink className="underline mx-4" to="/annoucements">
+        <span className="font-body1">{announcementString}</span>
+        <NavLink
+          className="underline mx-4 font-body1-text-link"
+          to="/annoucements"
+        >
           Learn More
         </NavLink>
       </E2CAlert>
 
       <section className="z-10 relative md:container mx-auto my-4 flex flex-row items-center agent-join-family">
         <div className="w-full lg:w-1/2 px-8 md:px-12 md:pt-8 lg:px-16 lg:pt-12">
-          <h3 className="text-3xl lg:text-4xl font-bold mb-4 leading-10">
-            Join the E2 family
-          </h3>
+          <h1 className="font-h2 lg:font-h1">Join the E2 family</h1>
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-            <p className="text-base lg:text-xl xl:text-2xl leading-8 mb-4">
+            <h4 className="font-h4 lg:font-subheading mb-4">
               Maximise the potential of your school and join the leaders in
               online education.
-            </p>
+            </h4>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
             <E2CButton color="white" bgColor="primary">
@@ -71,9 +72,9 @@ const AgentPage = () => {
       </section>
       <section className="relative z-10 mt-24 lg:mt-36">
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 leading-10 text-center">
+          <h1 className="font-h2 lg:font-h1 text-center">
             Why become an agent for E2Classroom?
-          </h2>
+          </h1>
         </ScrollAnimation>
       </section>
       <section className="z-10 relative md:container mx-auto my-16 lg:my-8 relative flex flex-row items-center">
@@ -92,14 +93,14 @@ const AgentPage = () => {
         </div>
         <div className="w-full lg:w-1/2 px-8 md:px-16 lg:px-18">
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-            <h3 className="text-3xl lg:text-4xl font-bold mb-4 leading-10">
+            <h2 className="font-h3 lg:font-h2">
               Join forces with the best online English teaching platform in the
               world.
-            </h3>
+            </h2>
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-            <p className="text-base lg:text-xl xl:text-2xl leading-8">
+            <p className="font-body1">
               When you join the E2 family, you will immediately be given all the
               support you need to efficiently transition your school online and
               begin offering world-class materials to your students.
@@ -114,7 +115,7 @@ const AgentPage = () => {
           </ScrollAnimation>
         </div>
       </section>
-      <section className="relative">
+      <section className="relative" style={{ marginTop: "150px" }}>
         <img
           src="/images/message_bg.png"
           className="agent-message-bg absolute z-0 w-12/12"
@@ -124,13 +125,13 @@ const AgentPage = () => {
       <section className="z-10 relative md:container mx-auto my-16 lg:my-8 flex flex-row items-center z-10">
         <div className="container lg:w-1/2 px-8 md:px-16 lg:px-18">
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-            <h3 className="text-3xl lg:text-4xl font-bold mb-4 leading-10">
+            <h2 className="font-h3 lg:font-h2">
               Give students the best opportunity
-            </h3>
+            </h2>
           </ScrollAnimation>
 
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-            <p className="text-base lg:text-xl xl:text-2xl leading-8">
+            <p className="font-body1">
               Once properly set up it's up to you how much time and effort you
               spend on promoting the courses. If you have an attractive link on
               your homepage or mention the program to each potential student who
@@ -154,7 +155,7 @@ const AgentPage = () => {
       </section>
       <section className="relative z-10 mt-24 lg:mt-36">
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4 leading-10 text-center">
+          <h2 className="font-h2 mb-4 text-center">
             What does an enrollment include?
           </h2>
         </ScrollAnimation>
@@ -222,14 +223,12 @@ const AgentPage = () => {
         <div className="absolute agency-green-box bg-brand-01"></div>
         <div className="w-full lg:w-1/2 px-8 md:px-12 lg:px-16 py-4 md:py-8 lg:py-12">
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-            <h3 className="text-white text-3xl lg:text-4xl font-bold mb-4 leading-10">
-              Get started now
-            </h3>
+            <h2 className="font-h2 text-white">Get started now</h2>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-            <p className="text-white text-xl lg:text-2xl font-bold mb-4 leading-10">
+            <h3 className="font-h3 text-white">
               Become an agent in 3 easy steps.
-            </p>
+            </h3>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
             <StepCard
@@ -299,8 +298,8 @@ const AgentPage = () => {
         <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
           <div className="hidden md:flex flex-row mt-4">
             <div className="w-1/3">
-              <h5 className="text-text-01 text-xl">COURSES</h5>
-              <div className="flex flex-row text-text-02">
+              <h5 className="text-text-01 font-body2">COURSES</h5>
+              <div className="flex flex-row text-text-02 font-button-text">
                 <ul className="w-1/2 flex flex-col">
                   <li>General English</li>
                   <li>IELTS Academic</li>
@@ -314,10 +313,10 @@ const AgentPage = () => {
               </div>
             </div>
             <div className="w-1/3">
-              <h5 className="text-text-01 text-xl">SOLUTIONS</h5>
+              <h5 className="text-text-01 font-body2">SOLUTIONS</h5>
             </div>
             <div className="w-1/3">
-              <h5 className="text-text-01 text-xl">SOLUTIONS</h5>
+              <h5 className="text-text-01 font-body2">SOLUTIONS</h5>
             </div>
           </div>
         </ScrollAnimation>
